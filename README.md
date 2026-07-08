@@ -1,84 +1,34 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chessapeake Privacy Policy</title>
-  <meta name="description" content="Privacy policy for Chessapeake, a chess opponent and coaching app for iPhone and iPad.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html">
-        <img src="assets/chessapeake-mascot.svg" alt="" aria-hidden="true">
-        <span>Chessapeake</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html" aria-current="page">Privacy</a>
-      </div>
-    </nav>
-  </header>
+# Chessapeake GitHub Pages Site
 
-  <main class="page content">
-    <p class="eyebrow">Privacy Policy</p>
-    <h1>Chessapeake Privacy Policy</h1>
-    <p class="lead">Effective date: July 8, 2026</p>
+This folder contains the static marketing, support, and privacy pages for
+Chessapeake.
 
-    <section class="section narrow">
-      <div class="notice">
-        <p>This policy describes the planned privacy behavior for Chessapeake. It should be reviewed before App Store submission and updated if analytics, accounts, cloud sync, crash reporting, or other third-party services are added.</p>
-      </div>
+## Pages
 
-      <h2>Overview</h2>
-      <p>Chessapeake is designed as a privacy-respecting chess opponent and coaching app. The app focuses on local gameplay, local review, skill practice, and optional App Store purchases. We do not sell personal information.</p>
+- `index.html` - marketing / landing page
+- `support.html` - App Store support URL
+- `privacy.html` - App Store privacy policy URL
+- `styles.css` - shared visual system
+- `assets/chessapeake-mascot.svg` - copied app mascot asset
 
-      <h2>Information Chessapeake may store on your device</h2>
-      <p>Chessapeake may save app data locally so the experience works across sessions, including:</p>
-      <ul>
-        <li>Saved games, PGN/FEN positions, move history, and replay state.</li>
-        <li>Training progress, skill mastery, spaced repetition timing, and lesson completion.</li>
-        <li>Coach preferences, opponent/persona choices, board settings, language settings, and other app preferences.</li>
-        <li>Mistake-memory signals used to recommend drills and lessons.</li>
-      </ul>
-      <p>This gameplay and learning data is intended to stay on your device unless you choose to share it through iOS sharing features or a future sync feature is added and disclosed.</p>
+## GitHub Pages setup
 
-      <h2>Purchases</h2>
-      <p>Chessapeake Plus and other purchases are processed by Apple through StoreKit and the App Store. Apple may provide purchase status information to the app so Chessapeake can unlock purchased features. We do not receive your full payment card number.</p>
+Recommended setup:
 
-      <h2>Support emails</h2>
-      <p>If you contact support, we receive the information you choose to send, such as your email address, message, screenshots, app version, device details, PGN, FEN, or crash description. We use that information to respond to you and improve Chessapeake.</p>
+1. Create a public GitHub repository for the site, for example
+   `chessapeake-site` or `chessapeake`.
+2. Copy the contents of this `site/` folder to the repository root.
+3. In GitHub, open Settings -> Pages.
+4. Set Source to `Deploy from a branch`.
+5. Choose the `main` branch and `/ (root)`.
+6. Use the generated Pages URLs in App Store Connect:
+   - Marketing URL: `https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/`
+   - Support URL: `https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/support.html`
+   - Privacy URL: `https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/privacy.html`
 
-      <h2>Analytics and tracking</h2>
-      <p>Chessapeake is intended to avoid third-party advertising trackers. If product analytics or crash reporting are added in the future, this policy and App Store privacy disclosures should be updated before release.</p>
+## Before App Store submission
 
-      <h2>Children and families</h2>
-      <p>Chessapeake is a general-audience chess app. It is not designed to collect personal information from children. Parents or guardians who believe a child has sent personal information through support can contact us to request deletion.</p>
-
-      <h2>Data sharing</h2>
-      <p>We do not sell personal information. We may share information only when needed to operate support, comply with law, protect the app, or process purchases through Apple services.</p>
-
-      <h2>Deleting data</h2>
-      <p>You can delete locally stored Chessapeake data by removing the app from your device. For support email deletion requests, contact <a href="mailto:dseppi@gmail.com?subject=Chessapeake%20Privacy%20Request">dseppi@gmail.com</a>.</p>
-
-      <h2>Changes to this policy</h2>
-      <p>We may update this policy as Chessapeake changes. When we do, we will update the effective date above.</p>
-
-      <h2>Contact</h2>
-      <p>Questions about privacy can be sent to <a href="mailto:dseppi@gmail.com?subject=Chessapeake%20Privacy%20Request">dseppi@gmail.com</a>.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span>© 2026 Seppi Design. Chessapeake.</span>
-      <nav aria-label="Footer navigation">
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </div>
-  </footer>
-</body>
-</html>
+- Replace `dseppi@gmail.com` if a different support email should be used.
+- Add the live App Store URL to the marketing page once available.
+- Have the privacy page reviewed if analytics, cloud sync, accounts, crash
+  reporting, or other third-party services are added.
