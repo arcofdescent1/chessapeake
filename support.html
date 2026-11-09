@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chessapeake Support</title>
-  <meta name="description" content="Support page for Chessapeake, a chess opponent and coaching app for iPhone and iPad.">
+  <meta name="description" content="Get support for Chessapeake, including purchases, restore purchases, gameplay, coaching, and feedback.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,42 +18,70 @@
         <a href="index.html">Home</a>
         <a href="support.html" aria-current="page">Support</a>
         <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
       </div>
     </nav>
   </header>
 
   <main class="page content">
     <p class="eyebrow">Support</p>
-    <h1>Chessapeake Support</h1>
-    <p class="lead">Need help with the app, a purchase, a saved game, or a position that feels off? Send a note and include any details that will help us reproduce it.</p>
+    <h1>How can we help?</h1>
+    <p class="lead">Chessapeake is built to be calm, understandable, and fun. If something feels confusing or broken, send a note and include the details below so we can help quickly.</p>
 
     <section class="section narrow">
-      <div class="notice">
-        <p>For fastest support, include your device model, iOS version, app version, and any PGN or FEN that shows the issue.</p>
+      <h2>Contact</h2>
+      <div class="card">
+        <h3>Email support</h3>
+        <p>Email <a href="mailto:dseppi@gmail.com?subject=Chessapeake%20Support">dseppi@gmail.com</a> with the subject line <strong>Chessapeake Support</strong>.</p>
+        <p>Please include your device model, iOS version, app version, and a short description of what happened. Screenshots are welcome.</p>
       </div>
 
-      <h2>Contact</h2>
-      <p>Email <a href="mailto:dseppi@gmail.com?subject=Chessapeake%20Support">dseppi@gmail.com</a> for Chessapeake support.</p>
+      <h2>Common questions</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>How do I restore purchases?</h3>
+          <p>Open the Plus or purchase screen in Chessapeake and tap Restore Purchases. Purchases are handled through Apple StoreKit and your App Store account.</p>
+        </article>
+        <article class="card">
+          <h3>How do subscriptions work?</h3>
+          <p>Chessapeake Plus uses App Store subscriptions. You can manage, cancel, or review renewal status in your Apple account subscription settings.</p>
+        </article>
+        <article class="card">
+          <h3>The coach seems wrong</h3>
+          <p>Chess is complicated. If a review or coach comment seems off, send the PGN, FEN, or screenshot. Those examples help us investigate concrete positions.</p>
+        </article>
+        <article class="card">
+          <h3>Can I play offline?</h3>
+          <p>Core chess play and local coaching features are designed to work on device. Some App Store purchase and restore actions require Apple services.</p>
+        </article>
+      </div>
 
-      <h2>Helpful details</h2>
+      <h2>Good bug reports</h2>
       <ul>
-        <li>What you were doing when the issue happened.</li>
-        <li>Whether it happens every time or only sometimes.</li>
-        <li>Screenshots, crash details, PGN, FEN, or move history when relevant.</li>
-        <li>Whether the issue involves purchases, saved games, training progress, or analysis.</li>
+        <li>What were you doing right before the problem happened?</li>
+        <li>Did it happen once, or can you repeat it?</li>
+        <li>What opponent, persona, time control, or lesson were you using?</li>
+        <li>If it was a chess-position issue, include the PGN or FEN if possible.</li>
       </ul>
 
-      <h2>Privacy</h2>
-      <p>Support messages are handled according to the <a href="privacy.html">Chessapeake Privacy Policy</a>.</p>
+      <h2>Privacy and diagnostics</h2>
+      <p>Chessapeake does not automatically upload diagnostics. Share only the screenshots, PGN, FEN, or device details you choose to include in an email. Never send an App Store password, payment card number, or purchase receipt.</p>
+
+      <h2>Open-source software</h2>
+      <p>Chessapeake includes Stockfish 19 under GPLv3-or-later. Download the <a href="downloads/Chessapeake-Stockfish-19-Source.zip">exact matching source package</a>, including the license, NNUE network, build flags, checksums, and Chessapeake bridge modifications.</p>
+
+      <h2>Availability and known issues</h2>
+      <p>Release-blocking issues are published here when confirmed. If a purchase is unavailable, core offline chess remains playable; use Restore Purchases after Apple services recover. If engine review stops because the device is warm, the game remains saved and review can be resumed after the device cools.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <span>&copy; 2026 Seppi Design. Chessapeake.</span>
+      <span>© 2026 Seppi Design. Chessapeake.</span>
       <nav aria-label="Footer navigation">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
       </nav>
     </div>
   </footer>
